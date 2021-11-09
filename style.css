@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    margin: 0;
+}
+.navul{
+    display: flex;
+    justify-content: space-between;
+}
+.navul>li
+,.ulcon>li{
+    padding: 15px 20px;
+    width: 152px;
+    background-color: #185FB7;
+}
+.navul>li:hover>a{
+    color: #FFCCCC;
+}
+.navul>li:hover li{
+    background-color: #66FFCC;
+
+}
+
+.navul>li:hover .ulcon{
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+.ligoc{
+    position: relative;
+}
+.ulcon{
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    display:none;
+}
+.img{
+    display: flex;
+}
